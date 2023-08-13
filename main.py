@@ -3,6 +3,7 @@ import requests
 import os
 import asyncio
 from telegram import Bot
+import time
 
 
 
@@ -48,3 +49,4 @@ while True:
 	    await bot.send_message(chat_id=chat_id, text=message)
 
 	asyncio.run(send_telegram_message(bot_token, chat_id, f"US${value_do_elemento} = R${value_nacional}"))
+	time.sleep(120)
