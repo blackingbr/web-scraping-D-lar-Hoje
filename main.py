@@ -6,11 +6,7 @@ from telegram import Bot
 
 
 
-try:
-    os.system("cls")
-
-except:
-    os.system("clear")
+os.system("clear")
 
 logo = """
   ____ _              _    
